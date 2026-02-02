@@ -1,0 +1,254 @@
+/*BODY & BASE*/
+body {
+  background-color: #d0e2ed;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 14px;
+  color: #111827;
+}
+
+/*PORTFOLIO CARDS */
+.port-card {
+  background: #f5f7f9;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.port-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.port-card:active {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*CARD TITLE ROW*/
+.card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-title-row .ct-icon {
+  font-size: 17px;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.card-title-row h5 {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+.card-title-row .view-all {
+  margin-left: auto;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #111827;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.card-title-row .view-all:hover {
+  text-decoration: underline;
+  color: #111827;
+}
+
+/*HEADER — AVATAR*/
+.avatar-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center; 
+  border-radius: 15px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: linear-gradient(145deg, #6b7280 0%, #4b5563 40%, #374151 100%);
+}
+
+.avatar-silhouette {
+  width: 100%;
+  height: 100%;
+  background:
+  radial-gradient(ellipse 55% 40% at 50% 32%, #9ca3af 0%, transparent 100%),
+  radial-gradient(ellipse 38% 55% at 50% 72%, #9ca3af 0%, transparent 100%),
+  linear-gradient(180deg, #5a6370 0%, #4a5360 100%);
+}
+
+/*HEADER — PRONOUNS*/
+.pronouns-badge {
+  font-size: 12.5px;
+  color: #000000;
+  font-weight: 500;
+}
+
+/*HEADER — UNIVERSITY BADGE*/
+.uni-logo-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.um-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*HEADER — SOCIAL BUTTONS*/
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 450;
+  color: #000000;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb 
+  border-radius: 8px;
+  padding: 6px 12px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.social-btn:hover {
+  background: #f3f4f6;
+  color: #56647c;
+}
+
+.social-btn .s-icon {
+  font-size: 13px;
+  color: #020f28;
+  font-weight: bold;
+}
+
+/*ABOUT ME*/
+.about-text {
+  font-size: 13.5px;
+  color: #000000;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/*EXPERIENCE*/
+.exp-card {
+  align-self: start;
+}
+
+.exp-item {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.exp-item:last-child {
+  border-bottom: none;
+}
+
+.exp-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.exp-company {
+  font-size: 13px;
+  color: #02102b;
+}
+
+.exp-date {
+  font-size: 13px;
+  font-weight: 500;
+  color: #02102b;
+  white-space: nowrap;
+}
+
+.exp-chevron {
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+/*TECH STACK*/
+.tech-label {
+  font-size: 13px;
+  font-weight: 650;
+  color: #000000;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12.5px;
+  font-weight: 450;
+  color: #000000;
+  background: #f9fafb;
+  border: 1px solid #dde3f2;
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+
+/*HOBBIES*/
+.hobby-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+  font-weight: bold;
+}
+
+.hobby-desc {
+  font-size: 13px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/*RECENT PROJECTS*/
+.project-item {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-title {
+  font-size: 13.5px;
+  font-weight: 650;
+  color: #000000;
+}
+
+.project-desc {
+  font-size: 12.5px;
+  color: #000000;
+  line-height: 1.55;
+  text-align: justify;
+}
+
+/*RECENT CERTIFICATIONS*/
+.cert-item {
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.cert-item:last-child {
+  border-bottom: none;
+}
+
+.cert-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.cert-issuer {
+  font-size: 12.5px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  
+}
