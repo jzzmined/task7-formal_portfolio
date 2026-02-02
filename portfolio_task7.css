@@ -1,7 +1,7 @@
 /*BODY & BASE*/
 body {
   background-color: #d0e2ed;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Lexend';
   font-size: 14px;
   color: #111827;
 }
@@ -29,19 +29,19 @@ body {
 /*CARD TITLE ROW*/
 .card-title-row {
   display: flex;
-  align-items: center;
+  align-items: justify;
   gap: 8px;
 }
 
 .card-title-row .ct-icon {
   font-size: 17px;
   color: #000000;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 .card-title-row h5 {
-  font-size: 15.5px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   color: #000000;
   margin: 0;
 }
@@ -50,7 +50,7 @@ body {
   margin-left: auto;
   font-size: 12.5px;
   font-weight: 500;
-  color: #111827;
+  color: #000000;
   cursor: pointer;
   text-decoration: none;
 }
@@ -110,25 +110,25 @@ body {
   align-items: center;
   gap: 5px;
   font-size: 13px;
-  font-weight: 450;
+  font-weight: 470;
   color: #000000;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb 
-  border-radius: 8px;
+  background:#ccd8e5;
+  border: 1px solid rgb(211, 225, 233);
+  border-radius: 6px;
   padding: 6px 12px;
   text-decoration: none;
   transition: background 0.15s;
 }
 
 .social-btn:hover {
-  background: #f3f4f6;
+  background: #f4f6fb;
   color: #56647c;
 }
 
 .social-btn .s-icon {
   font-size: 13px;
-  color: #020f28;
-  font-weight: bold;
+  color: #03132f;
+  font-weight: 500;
 }
 
 /*ABOUT ME*/
@@ -160,13 +160,13 @@ body {
 
 .exp-company {
   font-size: 13px;
-  color: #02102b;
+  color:  #161a1f;
 }
 
 .exp-date {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  color: #02102b;
+  color: #000000;
   white-space: nowrap;
 }
 
@@ -177,33 +177,32 @@ body {
 
 /*TECH STACK*/
 .tech-label {
-  font-size: 13px;
-  font-weight: 650;
+  font-size: 14px;
+  font-weight: 600;
   color: #000000;
 }
 
 .tag {
   display: inline-block;
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 450;
   color: #000000;
   background: #f9fafb;
-  border: 1px solid #dde3f2;
+  border: 1px solid #adafb1;
   border-radius: 6px;
   padding: 4px 10px;
 }
 
 /*HOBBIES*/
 .hobby-title {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: #000000;
-  font-weight: bold;
 }
 
 .hobby-desc {
   font-size: 13px;
-  color: #000000;
+  color: #161a1f;
   line-height: 1.6;
 }
 
@@ -217,14 +216,14 @@ body {
 }
 
 .project-title {
-  font-size: 13.5px;
-  font-weight: 650;
+  font-size: 14px;
+  font-weight: 600;
   color: #000000;
 }
 
 .project-desc {
-  font-size: 12.5px;
-  color: #000000;
+  font-size: 13px;
+  color: #161a1f;
   line-height: 1.55;
   text-align: justify;
 }
@@ -239,16 +238,187 @@ body {
 }
 
 .cert-title {
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 600;
   color: #000000;
 }
 
 .cert-issuer {
-  font-size: 12.5px;
-  color: #000000;
+  font-size: 13px;
+  color:  #161a1f;
 }
 
+/*MEDIA QUERIES*/
+
+/* Tablet View */
+@media (max-width: 991px) {
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    /* Center the header content on tablet */
+    .port-card .d-flex.align-items-start {
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center;
+    }
+    
+    .avatar-box {
+        margin: 0 auto;
+    }
+    
+    .avatar-box img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    /* Center university badge */
+    .port-card .d-flex.align-items-start > div:last-child {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    /* Center social buttons */
+    .social-btn {
+        justify-content: center;
+    }
+    
+    /* Stack columns - all cards centered */
+    .col-lg-8,
+    .col-lg-4 {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile View */
 @media (max-width: 768px) {
-  
+    body {
+        font-size: 13px;
+    }
+    
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        padding-top: 20px !important;
+    }
+    
+    /* Center header elements */
+    .port-card .d-flex.align-items-start {
+        flex-direction: column;
+        align-items: center !important;
+        text-align: center;
+    }
+    
+    .avatar-box {
+        margin: 0 auto 20px;
+    }
+    
+    .avatar-box img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* Center name and info */
+    .flex-grow-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .flex-grow-1 > div {
+        justify-content: center;
+    }
+    
+    /* Center university badge */
+    .port-card .d-flex.align-items-start > div:last-child {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .port-card {
+        margin-bottom: 15px;
+    }
+    
+    .card-title-row h5 {
+        font-size: 15px;
+    }
+    
+    /* Center all card content */
+    .port-card {
+        text-align: center;
+    }
+    
+    .card-title-row {
+        justify-content: center;
+    }
+    
+    /* Center tech tags */
+    .d-flex.flex-wrap {
+        justify-content: center;
+    }
+    
+    /* Adjust experience layout for mobile */
+    .exp-item .d-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .exp-date {
+        white-space: normal;
+    }
+    
+    .exp-chevron {
+        display: none;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+    
+    .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    
+    .avatar-box img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .social-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    .card-title-row h5 {
+        font-size: 14px;
+    }
+    
+    .exp-title,
+    .project-title,
+    .cert-title {
+        font-size: 13px;
+    }
+    
+    /* Smaller padding for cards on very small screens */
+    .port-card {
+        padding: 20px 15px !important;
+    }
+    
+    /* Adjust text alignment for better readability */
+    .about-text,
+    .project-desc {
+        text-align: left;
+    }
 }
